@@ -8,3 +8,10 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>,
 )
+
+
+/*
+git remote add origin https://github.com/shamshad786/ci-cd.git
+git branch -M main
+git push -u origin main
+*/ 
