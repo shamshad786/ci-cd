@@ -25,9 +25,13 @@ jobs:
         cd backend
         npm install
         npm run build
-
+        pm2 stop 0
+        pm2 start npm --name "backend-api" -- run start
+        pm2 save
     - name: Install and Build Client
       run: |
         cd client
         npm install
         npm run build
+        rm -rf /var/www/client/*
+        cp -r dist/* /var/www/client

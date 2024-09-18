@@ -27,14 +27,14 @@ const data = {
     presidentName: "MANPREET SINGH",
   };
 
-  app.get('/userdata', async(req: Request, res:Response)=>{
+  app.get('/api/userdata', async(req: Request, res:Response)=>{
         res.status(200).json({
             status: 'success',
             user: data
         })
   })
 
-  app.post('/sendmessage', async(req: Request,res:Response)=>{
+  app.post('/api/sendmessage', async(req: Request,res:Response)=>{
     const {message} = req.body
         res.status(201).json({
             status: 'success',
