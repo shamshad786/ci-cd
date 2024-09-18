@@ -24,7 +24,7 @@ const data = {
     dateOfHire: "09-28-2021",
     citation: "-regfe",
     incidentDate: "08/20/2024",
-    presidentName: "MANPREET SINGH",
+    presidentName: "KARANVEER SINGH",
   };
 
   app.get('/api/userdata', async(req: Request, res:Response)=>{
