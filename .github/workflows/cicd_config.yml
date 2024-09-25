@@ -1,5 +1,4 @@
 name: Node.js CI
-
 on:
   push:
     branches: [ main ]
@@ -25,8 +24,8 @@ jobs:
         cd backend
         npm install
         npm run build
-        pm2 stop 0
-        pm2 start 0
+        pm2 stop 4
+        pm2 start 4
     - name: Install and Build Client
       run: |
         cd client
